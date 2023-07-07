@@ -1,0 +1,27 @@
+/*De lg en adelante*/
+@media (min-width: 992px) {
+    .mt-lg--10{
+        margin-top: 10rem;
+    }
+
+
+
+    .card-blur {
+        width: 85%;
+    }
+
+    .footer-desc{
+        width: 85%;
+    }
+}
+
+/*De lg en adelante*/
+@media (min-width: 1200px) {
+    .card-blur {
+        width: 75%;
+    }
+
+    .footer-desc{
+        width: 75%;
+    }
+}

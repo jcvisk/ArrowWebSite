@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24.916857"
+   height="12.678835"
+   viewBox="0 0 24.916857 12.678835"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="togglerIcon.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="48.4"
+     inkscape:cx="12.448347"
+     inkscape:cy="6.3636364"
+     inkscape:window-width="3440"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 24.577456,6.678835 H 0.33937386 C 0.15326386,6.678835 0,6.525548 0,6.339415 0,6.153283 0.15326386,6 0.33937386,6 H 24.577456 c 0.1861,0 0.3394,0.153283 0.3394,0.339415 0,0.186133 -0.1533,0.33942 -0.3394,0.33942 z"
+     fill="#dcdcdc"
+     id="path2-1" />
+  <path
+     d="M 24.577456,12.678835 H 0.33937386 C 0.15326386,12.678835 0,12.525548 0,12.339415 0,12.153283 0.15326386,12 0.33937386,12 H 24.577456 c 0.1861,0 0.3394,0.153283 0.3394,0.339415 0,0.186133 -0.1533,0.33942 -0.3394,0.33942 z"
+     fill="#dcdcdc"
+     id="path2-2" />
+  <path
+     d="M 24.577456,0.678835 H 0.33937386 C 0.15326386,0.678835 0,0.525548 0,0.339415 0,0.153283 0.15326386,0 0.33937386,0 H 24.577456 c 0.1861,0 0.3394,0.153283 0.3394,0.339415 0,0.186133 -0.1533,0.33942 -0.3394,0.33942 z"
+     fill="#dcdcdc"
+     id="path2-7" />
+</svg>
