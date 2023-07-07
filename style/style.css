@@ -3,6 +3,7 @@
     --color-dark: #050911;
     --color-purple: #8D4FFF;
     --color-blue: #0075FF;
+    --color-light-blue: #26c8ec;
     --color-light-green: #7DFFA9;
     --color-light-purple: #A1C3FF;
 
@@ -25,6 +26,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-dark);
 }
 
 @font-face {
@@ -89,6 +94,14 @@ p {
     line-height: var(--line-height);
 }
 
+.colorAqua {
+    color: var(--color-aqua);
+}
+
+.colorLightBlue{
+    color: var(--color-light-blue);
+}
+
 .navbar-light .navbar-toggler-icon {
     background-image: url('../img/icons/togglerIcon.svg') !important;
 }
@@ -137,7 +150,19 @@ p {
 }
 
 
-/*========== NAVBAR ==========*/
+/*========== NAVBAR ==========*//*
+.header{
+    position: -webkit-sticky!important;
+    position: sticky!important;
+}*/
+
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
 .img-responsive {
     width: calc(100px + (130 - 100) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -204,6 +229,7 @@ p {
 
 /*========== SECT 1 ==========*/
 .content {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -211,34 +237,19 @@ p {
     z-index: 1;
 }
 
-.inicio {
-    background-image: url('../img/bg/bg1.png');
-    background-position-x: center;
-    background-position-y: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: var(--general-min-hight-section);
-
+.video {
     color: white;
 }
-
-.arrow-container {
-    position: relative;
+.video .h1 {
+    font-size: calc(18px + (43 - 18) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-
-.arrow-container h1 {
-    position: inherit;
-    z-index: 1;
+.video p {
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-
-.arrow-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    z-index: 0;
+.video .btn-principal {
+    font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300))) !important;
+    padding: .2rem .5rem;
 }
-
 /*========== ABOUT US ==========*/
 .aboutUs {
     background-image: url('../img/bg/bg2.png');
@@ -388,8 +399,6 @@ p {
     -webkit-backdrop-filter: blur(8px);
 }
 
-
-
 .card-marco-ext {
     border: 1.5px solid #4dffff;
 }
@@ -400,7 +409,7 @@ p {
     margin: 7px;
 }
 
-.card-border-top{
+.card-border-top {
     position: absolute;
     top: 0;
     left: 25px;
@@ -410,7 +419,7 @@ p {
     background-color: #4dffff;
 }
 
-.card-border-bottom{
+.card-border-bottom {
     position: absolute;
     bottom: 0;
     left: 25px;
@@ -420,7 +429,7 @@ p {
     background-color: #4dffff;
 }
 
-.card-border-left{
+.card-border-left {
     position: absolute;
     top: 15px;
     bottom: 15px;
@@ -429,7 +438,7 @@ p {
     background-color: #4dffff;
 }
 
-.card-border-right{
+.card-border-right {
     position: absolute;
     top: 14px;
     bottom: 14px;
@@ -437,6 +446,7 @@ p {
     width: 1.5px;
     background-color: #4dffff;
 }
+
 .esq-sup-izq {
     position: absolute;
     top: 0;
@@ -555,4 +565,208 @@ footer ul>li>a {
 footer ul>li>a:hover {
     color: white;
     text-decoration: none;
+}
+
+/*========== OPPORTUNITY ==========*/
+.opportunity {
+    background-image: url('../img/bg/opportunity/bg1.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: var(--general-min-hight-section);
+
+    color: white;
+}
+
+.opportunity .plan {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, var(--color-blue), var(--color-light-green), var(--color-light-purple)) 0.5;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+
+.opportunity .plan .h3 {
+    font-family: "MontserratSemiBold";
+    text-transform: uppercase;
+    font-size: calc(13px + (25 - 13) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+/*========== TYPES OF COMMISIONS ==========*/
+.commissions {
+    background-color: black;
+    background-image: url('../img/bg/opportunity/bg2.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: var(--general-min-hight-section);
+
+    color: white;
+}
+
+.comission {
+    background-image: url('../img/bg/bgComission.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.comission .h3 {
+    font-size: calc(20px + (27 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.comission .h5 {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+/*========== TECHNOLOGY BLOCKCHAIN ==========*/
+.blockchain {
+    background-color: black;
+    background-image: url('../img/bg/opportunity/bg3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100px + (500 - 100) * ((100vw - 300px) / (1600 - 300)));
+    ;
+
+    color: white;
+}
+
+/*========== EMPOWER USDT ==========*/
+.empower {
+    background-color: black;
+    background-image: url('../img/bg/opportunity/bg4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: var(--general-min-hight-section);
+    color: white;
+}
+
+.empower-card {
+    background: rgb(0,0,0);
+    background: linear-gradient(24deg, rgba(0,0,0,0) 0%, rgba(25,125,242,0.2665441176470589) 82%, rgba(0,209,255,0.4598214285714286) 100%);
+    /*box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);*/
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+}
+
+.empower-card p{
+    line-height: var(--line-height);
+    margin-bottom: 0.5rem;
+    font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.empower-card h6{
+    font-family: "Montserrat";
+}
+
+span.vineta{
+    font-family: "MontserratSemiBold";
+}
+
+.empower-card p>span.colorAqua{
+    font-family: "SourceSansProRegular";
+}
+
+/*========== COMPENSATION PLAN ==========*/
+.compensation-plan {
+    background-color: black;
+    background-image: url('../img/bg/opportunity/bg5.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: var(--general-min-hight-section);
+
+    color: white;
+}
+
+/*========== FOR WHOM IT IS? ==========*/
+.forWhomItIs {
+    background-color: black;
+    min-height: var(--general-min-hight-section);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.column1 {
+    width: 100%;
+
+    background-image: url('../img/bg/opportunity/bg6.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.column2 {
+    width: 100%;
+
+    background-image: url('../img/bg/opportunity/bg7.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.an-opportunity {
+    background-color: #101823;
+    color: white;
+
+    text-align: center;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, var(--color-blue), var(--color-light-green), var(--color-light-purple)) 0.5;
+
+    padding: 1rem;
+}
+
+.an-opportunity .h3 {
+    font-family: "MontserratSemiBold";
+    text-transform: uppercase;
+    font-size: calc(13px + (25 - 13) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+/*policies and terms*/
+.terms {
+    background-image: url(../img/bg/bg-terms.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.policies-footer {
+    background-image: url(../img/bg/bg-footer-policies.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.terms-footer {
+    background-image: url(../img/bg/bg-footer-terms.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.terms ul li {
+    font-family: "SourceSansProLight";
+    font-size: calc(13px + (18 - 13) * ((100vw - 300px) / (1600 - 300))) !important;
+    letter-spacing: var(--letter-spacing);
+    margin-left: 2%;
 }

@@ -1,3 +1,13 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
 
 /*de sm en adelante*/
 @media (min-width: 768px) {
@@ -13,6 +23,12 @@
     .comercialActivity {
         background-position: center;
     }
+
+
+    .video .btn-principal {
+        font-size: inherit !important;
+        padding: .75rem 2.5rem;
+    }
 }
 
 /*De lg en adelante*/
@@ -25,8 +41,24 @@
         width: 85%;
     }
 
-    .footer-desc{
+    .footer-desc {
         width: 85%;
+    }
+
+
+    .forWhomItIs {
+        flex-direction: row;
+    }
+
+    .column1,
+    .column2 {
+        width: 50%;
+    }
+
+
+    .an-opportunity,
+    .opportunity .plan {
+        padding: 3rem;
     }
 }
 
@@ -36,7 +68,15 @@
         width: 75%;
     }
 
-    .footer-desc{
+    .footer-desc {
         width: 75%;
+    }
+
+    .opportunity .plan {
+        padding: 7rem;
+    }
+
+    .an-opportunity {
+        padding: 5rem;
     }
 }

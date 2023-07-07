@@ -39,11 +39,11 @@
 </head>
 
 <body>
-    <header class="fixed-top bg-transparent-dark">
+    <header class="header bg-transparent-dark">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
 
-                <a class="navbar-brand order-1" href="#">
+                <a class="navbar-brand order-1" href="index.html">
                     <img src="img/logoHeader.png" alt="logo" class="img-responsive">
                 </a>
 
@@ -53,8 +53,8 @@
                             <img src="img/icons/languague.svg" alt="lang" class="img-fluid">
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">English</a>
-                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="index.html">English</a>
+                            <a class="dropdown-item" href="indexEs.html">Español</a>
                         </div>
                     </div>
 
@@ -73,22 +73,23 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item active">
-                            <a class="nav-link custom-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link custom-link" href="index.html">HOME <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#">Sobre</a>
+                            <a class="nav-link custom-link" href="#">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#">Servicios</a>
+                            <a class="nav-link custom-link" href="#">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#">Contáctenos</a>
+                            <a class="nav-link custom-link" href="#">CONTACT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#">Opportunidad</a>
+                            <a class="nav-link custom-link" href="opportunity.html">OPPORTUNITY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-link" href="#">Dashboard</a>
+                            <a class="nav-link custom-link" href="#">DASHBOARD</a>
                         </li>
                     </ul>
                 </div>
@@ -97,22 +98,28 @@
         </div>
     </header>
     <main>
-        <!-- Carousel -->
-        <section class="container-fluid py-5 inicio">
-            <div class="row">
-                <div class="col-12 col-sm-9 col-md-8 col-lg-6 align-self-center arrow-container">
-                    <img src="img/arrowColors.png" alt="arrowColors" class="img-fluid arrow-img d-sm-none">
-                    <h1 class="h1">EXPLORA EL FUTURO DE LA TECNOLOGÍA</h1>
-                    <p>Encuentra La Forma De Generar Ingresos Pasivos Moderados, Estables Y Sostenibles. Utilizando
-                        el Poder De La Inteligencia Artificial, El Dinamismo De Los Mercados Financieros, La
-                        Descentralización De La Tecnología Blockchain Y Las Criptodivisas.</p>
-                    <button class="btn btn-principal">¡ÚNETE AHORA!</button>
-                </div>
-                <div class="col-6 col-sm-3 col-md-4 col-lg-6 d-none d-sm-block text-center align-self-center">
-                    <img src="img/arrowColors.png" alt="arrowColors" class="img-fluid">
+        <section class="position-relative video" style="padding: 0; margin: 0;">
+            <div class="embed-responsive embed-responsive-16by9" style="background-color: #000000;">
+                <video class="w-100" autoplay loop muted playsinline>
+                    <source src="video/HeroVid.mp4" type="video/mp4" media="(min-width: 768px)" />
+                    <source src="video/HeroVid.webm" type="video/webm" media="(max-width: 767px)" />
+                </video>
+            </div>
+            <div class="content">
+                <div class="container-fluid pt-3 pt-sm-5">
+                    <div class="row">
+                        <div class="col-12 col-sm-9 col-md-8 col-lg-6 align-self-center">
+                            <h1 class="h1">EXPLORE THE FUTURE OF TECHNOLOGY</h1>
+                            <p>Find the way to generate moderate, stable, and sustainable passive income. Using the
+                                Power Of Artificial Intelligence, The Dynamism Of Financial Markets, The
+                                Decentralization of Blockchain Technology and Cryptocurrencies.</p>
+                            <button class="btn btn-principal">JOIN NOW!</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- About Us -->
         <section class="aboutUs py-5">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -121,38 +128,31 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12 col-md-8 col-lg-6">
-                                    <h2 class="h1">Sobre Nosotros</h2>
+                                    <h2 class="h1">About Us</h2>
 
-                                    <p class="text-justify text-lg-left">Somos una empresa en la categoría FinTech, con
-                                        sede oficial en Malta, Europa.
-                                        Malta nos ofrece: estabilidad económica, bajos impuestos y un clima propicio
-                                        paranegocios.</p>
-                                    <p class="text-justify text-lg-left">Detrás de Arrow se cuenta con hombres con
-                                        mentes empresariales los cuales
-                                        concibieron este proyecto a final del 2019; desde esta fecha se ha estado
-                                        trabajando en
-                                        la maduración de una idea, una visión que años más tarde hicimos realidad.
-                                    </p>
-                                    <p class="text-justify text-lg-left">Arrow cuenta con la asesoría de conocedores en
-                                        las siguientes materias:
-                                        Blockchain, Metatarso, Nft, inteligencia artificial, Mercados financieros,
-                                        finanzas,
-                                        marketing digital, mercadeo en redes, así como en materia legal.</p>
+                                    <p class="text-justify text-lg-left">We are a FinTech company, officially based in
+                                        Malta, Europe. Malta offers us: economic stability, low taxes and a business
+                                        friendly climate.</p>
+                                    <p class="text-justify text-lg-left">Behind Arrow there are men with entrepreneurial
+                                        minds who conceived this project at the end of 2019; since this date we have
+                                        been working on the maturation of an idea, a vision that years later we made
+                                        reality.</p>
+                                    <p class="text-justify text-lg-left">Arrow has the advice of experts in the
+                                        following areas: Blockchain, Metatarsus, Nft, artificial intelligence, financial
+                                        markets, finance, digital marketing, network marketing, as well as legal
+                                        matters.</p>
 
                                     <div class="separador"></div>
 
-                                    <p class="textAqua text-justify text-lg-left">Nuestra consigna es: honestidad,
-                                        integridad y transparencia para con nuestros
-                                        socios, clientes y aliados, ya que esperamos crecer y permanecer en el
-                                        mercado por
-                                        años y más años liderando la industria de las ventas. Directas.</p>
-                                    <p class="textAqua text-justify text-lg-left">Nuestra filosofía: <br> Creemos que un
-                                        buen negocio es aquel donde clientes,
-                                        suplidores, socios, inversionistas, contratista, entran, salen y vuelven a
-                                        entrar ya que
-                                        al hacer negocio con nosotros encontraron respeto, buen trato y
-                                        cumplimiento; superando así,
-                                        sus expectativas.</p>
+                                    <p class="textAqua text-justify text-lg-left">Our motto is: honesty, integrity and
+                                        transparency with our partners, customers and allies, as we expect to grow and
+                                        remain in the market for years and more years leading the sales industry.
+                                        Direct.</p>
+                                    <p class="textAqua text-justify text-lg-left">Our philosophy: <br> We believe that a
+                                        good business is one where customers, suppliers, partners, investors,
+                                        contractors, enter, leave and re-enter because when doing business with us they
+                                        found respect, good treatment and compliance; thus, exceeding their
+                                        expectations.</p>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
         <section class="container-fluid section-video py-5 d-flex justify-content-center">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 col-xl-8 align-self-center">
-                    <a href="#" target="_blank" class="js-video-button" data-video-id='GXlckaGr0Eo'>
+                    <a href="#" target="_blank" class="js-video-button" data-video-id='vscbjsK5KHY'>
                         <img src="img/bg/bg-video.png" class="img-fluid" alt="bg-video">
                     </a>
                 </div>
@@ -182,26 +182,23 @@
         <section class="ourObjetive container-fluid py-5">
             <div class="row">
                 <div class="col-12 col-md-8 col-lg-7">
-                    <h2 class="h1">Nuestro Objetivo </h2>
-                    <p class="text-justify text-lg-left">Una imparable fuerza nos mueve hacia la consolidación de una
-                        Empresa Robusta, Confiable y
-                        manejada
-                        Con criterio corporativo; que con responsabilidad y conocimiento usemos la Inteligencia
-                        Artificial, Los Mercados Financieros, El Metaverso, marketing Digital y la tecnología
-                        Blockchain para brindar oportunidades a emprendedores y soñadores que buscan construir
-                        sobre terreno sólido, lejos de la mentalidad mediática, pero cero del logro trabajado.
+                    <h2 class="h1">Our Objective </h2>
+                    <p class="text-justify text-lg-left">An unstoppable force moves us towards the consolidation of a
+                        Robust, Reliable and Managed Company.
+                        With corporate criteria; that with responsibility and knowledge we use Artificial Intelligence,
+                        Financial Markets, The Metaverse, Digital marketing and Blockchain technology to provide
+                        opportunities to entrepreneurs and dreamers who seek to build on solid ground, far from the
+                        media mentality, but zero of the worked achievement.
                     </p>
-                    <p class="text-justify text-lg-left">Todo éxitos está precedido por un proceso; Nosotros estamos
-                        Aquí para que cada
-                        emprendedor vuelva a soñar con hacer carrera en una empresa que le permita llevar a cabo
-                        un proyecto de vida, perseguir un elevado ideal, atravesar un proceso para obtener un
-                        fin, dar lo mejor de sí, para recibir de nuestra parte excelencia en cada detalle.</p>
+                    <p class="text-justify text-lg-left">Every success is preceded by a process; we are here for every
+                        entrepreneur to dream again to make a career in a company that allows him to carry out a life
+                        project, to pursue a high ideal, to go through a process to obtain an end, to give the best of
+                        himself, to receive from us excellence in every detail.</p>
 
                     <div class="separador"></div>
-                    <p class="textAqua text-justify text-lg-left">El éxito verdadero se cultiva, se construye, se forja
-                        un día a la vez, con propósito
-                        firme e inmutable estamos aquí haciéndolo bien para,
-                        Gente que buscar y espera lo mejor.</p>
+                    <p class="textAqua text-justify text-lg-left">True success is cultivated, built, forged one day at a
+                        time, with firm and unchanging purpose we are here doing it right for,
+                        People who seek and expect the best.</p>
                 </div>
             </div>
         </section>
@@ -211,9 +208,9 @@
                 <div class="top">
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="h1">Nuestros Desarrollos</h2>
+                            <h2 class="h1">Our Developments</h2>
                             <br>
-                            <p>ESTOS PRODUCTOS ESTAN DISPONIBLE PARA EL PÚBLICO EN GENERAL</p>
+                            <p>THESE PRODUCTS ARE AVAILABLE TO THE GENERAL PUBLIC</p>
                         </div>
                     </div>
                 </div>
@@ -221,61 +218,58 @@
                     <div class="row">
                         <div class="col-12 col-lg-4 mb-3">
                             <div class="card-blur p-1">
-                                <h5 class="h5 card-subtitle m-0">PLATAFORMA DE</h5>
-                                <h3 class="h3 card-title m-0">ALOJAMIENTO</h3>
+                                <h3 class="h3 card-title m-0">HOSTING</h3>
+                                <h5 class="h5 card-subtitle m-0 text-uppercase">Platform</h5>
                             </div>
                             <div class="footer-desc mt-1 d-lg-none">
-                                <small>Una inteligente y amigable plataforma donde usted puede poner en alquiler o
-                                    alquilar cualquier Alojamiento o vehículo.</small>
+                                <small>A smart and friendly platform where you can rent or lease any accommodation or
+                                    vehicle.</small>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 mb-3">
                             <div class="card-blur p-1">
-                                <h5 class="h5 card-subtitle m-0">PLATAFORMA</h5>
-                                <h3 class="h3 card-title m-0">EDUCATIVA</h3>
+                                <h3 class="h3 card-title m-0">EDUCATIONAL</h3>
+                                <h5 class="h5 card-subtitle m-0 text-uppercase">PlatFORM</h5>
                             </div>
                             <div class="footer-desc mt-1 d-lg-none">
-                                <small>El futuro de la educación es ONLINE, La Educación Del Futuro Es El Conocimiento
-                                    Que Forma El Ser Para llegar a Tener
-                                    Vender y Comprar cursos, talleres y Pay Per View.</small>
+                                <small>The future of education is ONLINE, The Education Of The Future Is The Knowledge
+                                    That Shapes The Being To Become To Have
+                                    Sell and Buy courses, workshops and Pay Per View.</small>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 mb-3">
                             <div class="card-blur p-1">
-                                <h5 class="h5 card-subtitle m-0">PLATAFORMA DE</h5>
-                                <h3 class="h3 card-title m-0">CRIPTO ACTIVO</h3>
+                                <h3 class="h3 card-title m-0">CRIPTO ACTIVE</h3>
+                                <h5 class="h5 card-subtitle m-0 text-uppercase">Platform</h5>
                             </div>
                             <div class="footer-desc mt-1 d-lg-none">
-                                <small>Indica Cuál Cripto Activo Comprar, Cuando Comprar y Cuando Vender.
-                                    <br>
-                                    Tutoriales en tu idioma que te enseñan, donde Comprar y como Vender.</small>
+                                <small>Which Crypto Asset to Buy, When to Buy and When to Sell.
+                                    Tutorials in your language that teach you where to buy and how to sell.</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bottom d-none d-lg-block">
+                <div class="bottom d-none d-lg-block p-5">
                     <div class="row">
                         <div class="col-4">
                             <div class="footer-desc">
-                                <small>Una inteligente y amigable plataforma donde usted puede poner en alquiler o
-                                    alquilar cualquier Alojamiento o vehículo.</small>
+                                <small>A smart and friendly platform where you can rent or lease any accommodation or
+                                    vehicle.</small>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="footer-desc">
-                                <small>El futuro de la educación es ONLINE, La Educación Del Futuro Es El Conocimiento
-                                    Que Forma El Ser Para llegar a Tener
-                                    <br>
-                                    <br>
-                                    Vender y Comprar cursos, talleres y Pay Per View.</small>
+                                <small>The future of education is ONLINE, The Education Of The Future Is The Knowledge
+                                    That Shapes The Being To Become To Have
+                                    <br><br>
+                                    Sell and Buy courses, workshops and Pay Per View.</small>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="footer-desc">
-                                <small>Indica Cuál Cripto Activo Comprar, Cuando Comprar y Cuando Vender.
-                                    <br>
-                                    <br>
-                                    Tutoriales en tu idioma que te enseñan, donde Comprar y como Vender.</small>
+                                <small>Which Crypto Asset to Buy, When to Buy and When to Sell.
+                                    <br><br>
+                                    Tutorials in your language that teach you where to buy and how to sell.</small>
                             </div>
                         </div>
                     </div>
@@ -289,25 +283,25 @@
         <section class="comercialActivity py-5 container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="h1">Actividad Comercial</h2>
+                    <h2 class="h1">Business Activity</h2>
                     <br>
-                    <p>FACTOR DIFERENCIADOR</p>
+                    <p>DIFFERENTIATING FACTOR</p>
 
-                    <p>Manejamos una plataforma de sorteos, <br> bajo la Modalidad de Cupones.</p>
-                    <p>Con los cuales el poseedor puede participar <br> en sorteos semanales de: </p>
+                    <p>We manage a sweepstakes platform, under <br> the Coupons Modality.</p>
+                    <p>With which the holder can participate in <br> weekly drawings of:</p>
 
                     <ul class="textAqua ml-5">
                         <li>NFTs</li>
                         <li>Tokens</li>
-                        <li>Propiedades en el Metaverso</li>
-                        <li>Criptomonedas</li>
+                        <li>Metaverso Land</li>
+                        <li>Cryptocurrencies</li>
                         <li>Staking</li>
                         <li>DeFi</li>
-                        <li>Cuentas con pasivos</li>
-                        <li>Así como otros objetos de valor</li>
+                        <li>Passive Accounts</li>
+                        <li>As well as other valuable items</li>
                     </ul>
 
-                    <button class="btn btn-principal">OPORTUNIDAD</button>
+                    <button class="btn btn-principal">OPPORTUNITY</button>
                 </div>
             </div>
         </section>
@@ -315,12 +309,12 @@
         <section class="ourServices container-fluid py-5">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="h1">Nuestros Servicios</h2>
-                    <p>Para uso exclusivo de la comunidad.</p>
+                    <h2 class="h1">Our Services</h2>
+                    <p>For the exclusive use of the community.</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                
+            <div class="row justify-content-center mt-5">
+
                 <div class="col-12 col-md-4 d-flex flex-column">
                     <div class="card">
                         <img src="img/icons/one.png" class="card-img-top w-25 m-auto" alt="one">
@@ -338,15 +332,14 @@
                                     <span class="card-border-left"></span>
 
                                     <p>
-                                        Localizador de Broker. <br>
-                                        Receptor de señales. <br>
-                                        Sistema de alerta en <br>
-                                        cada señal.
+                                        Broker Locator <br>
+                                        Signal receiver. <br>
+                                        Alert system on each signal. <br>
+                                        each signal.
                                     </p>
-                                    <p>Señales en distintas modalidades de trading los 7 días de la semana, para que
-                                        opere en el mercado de tu elección, con tu capital en el Broker de tu
-                                        preferencia.</p>
-                                    <p>Efectividad de 10/7 para que cierre el día en positivo.</p>
+                                    <p>Signals in different trading modes 7 days a week, to trade in the market of your
+                                        choice, with your capital in the broker of your choice.</p>
+                                    <p>Effectiveness of 10/7 to close the day in positive.</p>
                                 </div>
                             </div>
                         </div>
@@ -368,11 +361,11 @@
                                     <span class="card-border-bottom"></span>
                                     <span class="card-border-left"></span>
 
-                                    <p>Bot que espera en Scalping con inteligencia artificial.</p>
-                                    <p>Sistema operativo automatizado.</p>
-                                    <p>Capital en un Broker totalmente independiente.</p>
-                                    <p>Control absoluto de tu capital.</p>
-                                    <p>Opera los 7 días de la semana. Efectividad probada testeada.</p>
+                                    <p>Bot waiting in Scalping with artificial intelligence.</p>
+                                    <p>Automated operating system.</p>
+                                    <p>Capital in a totally independent Broker.</p>
+                                    <p>Absolute control of your capital.</p>
+                                    <p>Operates 7 days a week. Proven effectiveness tested.</p>
                                 </div>
                             </div>
                         </div>
@@ -394,11 +387,9 @@
                                     <span class="card-border-bottom"></span>
                                     <span class="card-border-left"></span>
 
-                                    <p>Pool de finanzas participativas.</p>
-                                    <p>Gestionado, operado y administrado por nuestro equipo de expertos.</p>
-                                    <p>Coloca un aporte de capital y recibe ganancias diariamente por tiempo
-                                        limitado.
-                                    </p>
+                                    <p>Participative finance pool.</p>
+                                    <p>Managed, operated and administered by our team of experts.</p>
+                                    <p>Place a capital contribution and receive daily earnings for a limited time.</p>
                                 </div>
                             </div>
                         </div>
@@ -412,35 +403,36 @@
                 <div>
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="h1">Contáctenos</h2>
-                            <p>ARROW apoya y potencia los emprendedores en <br class="d-none d-sm-block"> expansión e
-                                innovaciones a medida que crecemos.
+                            <h2 class="h1">Contact Us</h2>
+                            <p>
+                                ARROW supports and empowers expanding <br class="d-none d-sm-block"> entrepreneurs and
+                                innovations as we grow.
                             </p>
                         </div>
                         <div class="col-12">
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-12 col-md-5">
-                                        <label for="inputName">Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese Nombre Completo"
+                                        <label for="inputName">Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Full Name"
                                             id="inputName">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-12 col-md-5">
-                                        <label for="inputEmail">Correo Electrónico</label>
-                                        <input type="text" class="form-control" placeholder="Ingrese su correo"
+                                        <label for="inputEmail">Email</label>
+                                        <input type="text" class="form-control" placeholder="Enter email"
                                             id="inputEmail">
                                     </div>
                                     <div class="form-group col-12 col-md-5">
-                                        <label for="inputInstagram">Instragram</label>
-                                        <input type="text" class="form-control" placeholder="@usuario"
+                                        <label for="inputInstagram">Instagram</label>
+                                        <input type="text" class="form-control" placeholder="@username"
                                             id="inputInstagram">
                                     </div>
                                 </div>
                                 <div class="form-row mt-4">
                                     <div class="col-12">
-                                        <button class="btn btn-principal">ENVIAR</button>
+                                        <button class="btn btn-principal">SUBMIT</button>
                                     </div>
                                 </div>
                             </form>
@@ -448,7 +440,8 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="h3 text-uppercase text-center mt-5">Dentro de un año desearás haber empezado hoy</h2>
+                    <h3 class="h3 text-uppercase text-center mt-5">A year from now you will wish you had started today
+                        </h2>
                 </div>
             </div>
         </section>
@@ -456,8 +449,8 @@
         <section class="container-fluid py-5 followUs d-flex">
             <div class="row justify-content-center m-auto">
                 <div class="col-12 text-center align-self-center">
-                    <h2 class="h1">SIGUENOS</h2>
-                    <p>EN REDES SOCIALES</p>
+                    <h2 class="h1">FOLLOW US</h2>
+                    <p>ON SOCIAL MEDIA</p>
 
                     <ul class="social-menu list-inline mt-5">
                         <li class="list-inline-item">
@@ -496,26 +489,26 @@
                 <div class="_container">
                     <div class="col1">
                         <ul>
-                            <li><a href="#" target="_blank" class="custom-link">INICIO</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">SOBRE</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">SERVICIOS</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">DASHBOARD</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">OPORTUNIDAD</a></li>
+                            <li><a href="index.html" class="custom-link">HOME</a></li>
+                            <li><a href="#" class="custom-link">ABOUT US</a></li>
+                            <li><a href="#" class="custom-link">SERVICES</a></li>
+                            <li><a href="#" class="custom-link">DASHBOARD</a></li>
+                            <li><a href="opportunity.html" class="custom-link">OPPORTUNITY</a></li>
                         </ul>
                     </div>
                     <div class="col2">
                         <ul>
-                            <li><a href="#" target="_blank" class="custom-link">MEMBRESÍAS</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">POLÍTICAS</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">TERMINOS DE SERVICIOS</a></li>
-                            <li><a href="#" target="_blank" class="custom-link">CONTÁCTENOS</a></li>
+                            <li><a href="#" class="custom-link">MEMBERSHIP</a></li>
+                            <li><a href="privacyPolicies.html" class="custom-link">PRIVACY POLITICS</a></li>
+                            <li><a href="termsService.html" class="custom-link">TERMS OF SERVICE</a></li>
+                            <li><a href="#" class="custom-link">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-4 order-3 text-sm-right align-self-center">
-                <small> Derechos Reservados &copy; <span id="year"></span></small>
+                <small> All Rights Reserved &copy; <span id="year"></span></small>
             </div>
 
         </div>
