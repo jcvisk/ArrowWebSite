@@ -1,10 +1,25 @@
-/*De lg en adelante*/
-@media (min-width: 992px) {
-    .mt-lg--10{
-        margin-top: 10rem;
+
+/*de sm en adelante*/
+@media (min-width: 768px) {
+
+    .ourObjetive {
+        background-position: right;
     }
 
+    .ourDevelopments {
+        background-position-x: center;
+    }
 
+    .comercialActivity {
+        background-position: center;
+    }
+}
+
+/*De lg en adelante*/
+@media (min-width: 992px) {
+    .aboutUs {
+        background-position-x: center;
+    }
 
     .card-blur {
         width: 85%;
@@ -15,7 +30,7 @@
     }
 }
 
-/*De lg en adelante*/
+/*De xl en adelante*/
 @media (min-width: 1200px) {
     .card-blur {
         width: 75%;

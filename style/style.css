@@ -21,8 +21,6 @@
 * {
     margin: 0;
     padding: 0;
-
-    /*outline: 1px solid red;*/
 }
 
 html {
@@ -32,6 +30,11 @@ html {
 @font-face {
     font-family: "Montserrat";
     src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url(../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
@@ -96,13 +99,41 @@ p {
 }
 
 .btn-principal {
-    font-family: "MontserratBold";
+    font-family: "MontserratSemiBold";
     background-image: url('../img/bg/bgBtn.png');
     background-repeat: no-repeat;
     background-position: center;
     color: white;
     border: 1px solid #2FEEFA;
-    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
+    padding: .75rem 2.5rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-principal:hover {
+    color: white;
+    box-shadow: 1px 1px 25px 5px rgba(146, 148, 248, 0.4);
+}
+
+.btn-principal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent);
+    transition: all 650ms;
+}
+
+.btn-principal:hover:before {
+    left: 100%;
 }
 
 
@@ -125,11 +156,28 @@ p {
     padding: 0 1rem;
 }
 
-.custom-link:hover {
+.custom-link {
+    position: relative;
+}
+
+.custom-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.custom-link::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+
     background-image: linear-gradient(to right, var(--color-blue), var(--color-purple));
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100% 2px;
+    height: 2px;
+
+    left: 50%;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .dropdown-menu {
@@ -141,13 +189,17 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
     color: white;
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu a:hover {
     background: rgba(0, 0, 0, 0.25);
     color: white;
+}
+
+.dropdown .nav-link {
+    padding: 0.5rem 1rem !important;
 }
 
 /*========== SECT 1 ==========*/
@@ -190,7 +242,7 @@ p {
 /*========== ABOUT US ==========*/
 .aboutUs {
     background-image: url('../img/bg/bg2.png');
-    background-position-x: center;
+    background-position-x: left;
     background-position-y: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,7 +287,7 @@ p {
 .ourObjetive {
     background-image: url('../img/bg/bg4.png');
     background-position: center;
-    background-position-x: right;
+    background-position-x: left;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: var(--general-min-hight-section);
@@ -246,7 +298,7 @@ p {
 .ourDevelopments {
     background-image: url('../img/bg/bg5.png');
     background-position: center;
-    background-position-x: right;
+    background-position-x: left;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: var(--general-min-hight-section);
@@ -279,7 +331,6 @@ p {
     border-image: linear-gradient(45deg, var(--color-blue), var(--color-light-green), var(--color-light-purple)) 0.5;
 
     background: rgba(0, 0, 0, 0.25);
-    /*box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);*/
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
@@ -299,7 +350,7 @@ p {
 /*========== COMERCIAL ACTIVITY ==========*/
 .comercialActivity {
     background-image: url('../img/bg/bg6.png');
-    background-position: center;
+    background-position: unset;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: var(--general-min-hight-section);
@@ -325,8 +376,9 @@ p {
     padding: 0;
 }
 
-.ourServices .content p {
+.ourServices p {
     line-height: var(--line-height);
+    margin-bottom: 0.5rem;
 }
 
 .bg-blur {
@@ -334,7 +386,83 @@ p {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+.card-marco-ext {
+    border: 1.5px solid #4dffff;
+}
+
+.card-marco-int {
+    position: relative;
+    /*border: 1.5px solid #4dffff;*/
+    margin: 7px;
+}
+
+.card-border-top{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    right: 25px;
+    width: calc(100% - 50px);
+    height: 1.5px;
+    background-color: #4dffff;
+}
+
+.card-border-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+    width: calc(100% - 50px);
+    height: 1.5px;
+    background-color: #4dffff;
+}
+
+.card-border-left{
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 0;
+    width: 1.5px;
+    background-color: #4dffff;
+}
+
+.card-border-right{
+    position: absolute;
+    top: 14px;
+    bottom: 14px;
+    right: 0;
+    width: 1.5px;
+    background-color: #4dffff;
+}
+.esq-sup-izq {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.esq-sup-der {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.esq-inf-der {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateX(180deg) rotateY(180deg);
+}
+
+.esq-inf-izq {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateX(180deg);
+
 }
 
 /*========== CONTACT US ==========*/
@@ -369,6 +497,10 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+
+.contactUs h3 {
+    font-family: "MontserratSemiBold";
 }
 
 /*========== FOLLOW US ==========*/
@@ -416,9 +548,11 @@ footer ul {
     margin: 0;
 }
 
-footer ul>li>span:hover {
-    background-image: linear-gradient(to right, var(--color-blue), var(--color-purple));
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 2px;
+footer ul>li>a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer ul>li>a:hover {
+    color: white;
+    text-decoration: none;
 }
