@@ -60,6 +60,17 @@
     .opportunity .plan {
         padding: 3rem;
     }
+
+
+    .contentZ {
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(14%, -50%);
+        z-index: 1;
+        padding: 0 0;
+    }
 }
 
 /*De xl en adelante*/
@@ -78,5 +89,16 @@
 
     .an-opportunity {
         padding: 5rem;
+    }
+
+
+    .contentZ {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(14%, -50%);
+        z-index: 1;
+        padding: 0 0;
     }
 }
