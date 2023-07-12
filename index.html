@@ -16,6 +16,7 @@
     <!-- Custom -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+
     <title>A R R O W</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
@@ -73,8 +74,7 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item active">
-                            <a class="nav-link custom-link" href="index.html">HOME <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link custom-link" href="#">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-link" href="#about-us">ABOUT</a>
@@ -96,29 +96,7 @@
         </div>
     </header>
     <main>
-        <!-- 
-        <section class="position-relative video" style="padding: 0; margin: 0;">
-            <div class="embed-responsive embed-responsive-16by9" style="background-color: #000000;">
-                <video class="w-100" autoplay loop muted playsinline>
-                    <source src="video/HeroVid.mp4" type="video/mp4" media="(min-width: 768px)" />
-                    <source src="video/HeroVid.webm" type="video/webm" media="(max-width: 767px)" />
-                </video>
-            </div>
-            <div class="content">
-                <div class="container-fluid pt-3 pt-sm-5">
-                    <div class="row">
-                        <div class="col-12 col-sm-9 col-md-8 col-lg-6 align-self-center">
-                            <h1 class="h1 wow animate__animated animate__slideInLeft">EXPLORE THE FUTURE OF TECHNOLOGY</h1>
-                            <p>Find the way to generate moderate, stable, and sustainable passive income. Using the
-                                Power Of Artificial Intelligence, The Dynamism Of Financial Markets, The
-                                Decentralization of Blockchain Technology and Cryptocurrencies.</p>
-                            <button class="btn btn-principal wow animate__animated animate__zoomIn">JOIN NOW!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
+        <!-- Video -->
         <div class="video-container video">
             <video autoplay muted loop id="background-video">
                 <source src="video/HeroVid.webm" type="video/webm" />
@@ -126,55 +104,125 @@
             </video>
             <div class="contentZ">
                 <h1 class="h1 wow animate__animated animate__slideInLeft">EXPLORE THE FUTURE OF TECHNOLOGY</h1>
-                <p>Find the way to generate moderate, stable, and sustainable passive income. Using the
+                <p class="my-5 my-md-0">Find the way to generate moderate, stable, and sustainable passive income. Using the
                     Power Of Artificial Intelligence, The Dynamism Of Financial Markets, The
                     Decentralization of Blockchain Technology and Cryptocurrencies.</p>
-                <button class="btn btn-principal wow animate__animated animate__zoomIn">JOIN NOW!</button>
+                <div class="text-center text-sm-left mt-md-3">
+                    <button class="btn btn-principal text-center wow animate__animated animate__zoomIn">JOIN
+                        NOW!</button>
+                </div>
             </div>
         </div>
-
         <!-- About Us -->
-        <section class="aboutUs py-5" id="about-us">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <section class="about-us" id="about-us">
+            <!-- mobile version -->
+            <div id="aboutUsCarouselControls" class="carousel slide d-md-none" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+
+                    <div class="carousel-item item-1 py-5 active">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12 col-md-8 col-lg-6">
+                                <div class="col-9">
                                     <h2 class="h1">About Us</h2>
 
-                                    <p class="text-justify text-lg-left">We
-                                        are a FinTech company, officially based in
+                                    <p class="mt-5">We are a FinTech company, officially based in
                                         Malta, Europe. Malta offers us: economic stability, low taxes and a business
                                         friendly climate.</p>
-                                    <p class="text-justify text-lg-left">
+                                    <p class="">
                                         Behind Arrow there are men with entrepreneurial
                                         minds who conceived this project at the end of 2019; since this date we have
                                         been working on the maturation of an idea, a vision that years later we made
                                         reality.</p>
-                                    <p class="text-justify text-lg-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-2 py-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h2 class="h1">About Us</h2>
+
+                                    <p class="mt-5">
                                         Arrow has the advice of experts in the
                                         following areas: Blockchain, Metatarsus, Nft, artificial intelligence, financial
                                         markets, finance, digital marketing, network marketing, as well as legal
                                         matters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-3 py-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h2 class="h1">About Us</h2>
 
+                                    <p class="textAqua mt-5">
+                                        Our motto is: <br>
+                                        honesty, integrity and transparency with our partners, customers and allies, as we expect to grow and
+                                        remain in the market for years and more years leading the sales industry.
+                                        Direct.</p>
+                                    <p class="textAqua">
+                                        Our philosophy: <br> 
+                                        We believe that a good business is one where customers, suppliers, partners, investors,
+                                        contractors, enter, leave and re-enter because when doing business with us they
+                                        found respect, good treatment and compliance; thus, exceeding their
+                                        expectations.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
+                </div>
+                <a class="carousel-control-prev" href="#aboutUsCarouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#aboutUsCarouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- desktop version -->
+            <div id="aboutUs2CarouselControls" class="carousel slide d-none d-md-block" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item item-1 py-5 active">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-12 col-md-8 col-lg-6">
-                                    <h2 class="h1 ">About Us</h2>
+                                <div class="col-9 col-lg-6">
+                                    <h2 class="h1">About Us</h2>
 
-                                    <p class="textAqua text-justify text-lg-left ">
-                                        Our motto is: <br><br> honesty, integrity and
+                                    <p class="mt-5">We are a FinTech company, officially based in
+                                        Malta, Europe. Malta offers us: economic stability, low taxes and a business
+                                        friendly climate.</p>
+                                    <p class="">
+                                        Behind Arrow there are men with entrepreneurial
+                                        minds who conceived this project at the end of 2019; since this date we have
+                                        been working on the maturation of an idea, a vision that years later we made
+                                        reality.</p>
+                                    <p class="">
+                                        Arrow has the advice of experts in the
+                                        following areas: Blockchain, Metatarsus, Nft, artificial intelligence, financial
+                                        markets, finance, digital marketing, network marketing, as well as legal
+                                        matters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-3 py-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-9 col-lg-6">
+                                    <h2 class="h1">About Us</h2>
+
+                                    <p class="textAqua mt-5">
+                                        Our motto is: <br><br>honesty, integrity and
                                         transparency with our partners, customers and allies, as we expect to grow and
                                         remain in the market for years and more years leading the sales industry.
                                         Direct.</p>
-                                    <p class="textAqua text-justify text-lg-left ">
+                                    <p class="textAqua">
                                         Our philosophy: <br><br> We believe that a
                                         good business is one where customers, suppliers, partners, investors,
                                         contractors, enter, leave and re-enter because when doing business with us they
@@ -184,12 +232,13 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#aboutUs2CarouselControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#aboutUs2CarouselControls" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -197,8 +246,8 @@
         </section>
         <!-- Video -->
         <section class="container-fluid section-video py-5 d-flex justify-content-center">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8 align-self-center wow animate__animated animate__zoomIn">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-md-8 col-lg-10 col-xl-8 align-self-center wow animate__animated animate__zoomIn">
                     <a href="#" target="_blank" class="js-video-button" data-video-id='YCtmiJ_qywk'>
                         <img src="img/bg/bg-video.png" class="img-fluid" alt="bg-video">
                     </a>
@@ -206,121 +255,243 @@
             </div>
         </section>
         <!-- Our Objetive -->
-        <section class="ourObjetive container-fluid py-5">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-7">
-                    <h2 class="h1 wow animate__animated animate__slideInLeft">Our Objective </h2>
-                    <p class="text-justify text-lg-left wow animate__animated animate__slideInLeft">An unstoppable force
-                        moves us towards the consolidation of a
-                        Robust, Reliable and Managed Company.
-                        With corporate criteria; that with responsibility and knowledge we use Artificial Intelligence,
-                        Financial Markets, The Metaverse, Digital marketing and Blockchain technology to provide
-                        opportunities to entrepreneurs and dreamers who seek to build on solid ground, far from the
-                        media mentality, but zero of the worked achievement.
-                    </p>
-                    <p class="text-justify text-lg-left wow animate__animated animate__slideInLeft">Every success is
-                        preceded by a process; we are here for every
-                        entrepreneur to dream again to make a career in a company that allows him to carry out a life
-                        project, to pursue a high ideal, to go through a process to obtain an end, to give the best of
-                        himself, to receive from us excellence in every detail.</p>
+        <section class="our-objetive">
+            <!-- mobile version -->
+            <div id="ourObjetiveCarouselControls" class="carousel slide d-md-none" data-ride="carousel">
+                <div class="carousel-inner">
 
-                    <div class="separador"></div>
-                    <p class="textAqua text-justify text-lg-left wow animate__animated animate__slideInLeft">True
-                        success is cultivated, built, forged one day at a
-                        time, with firm and unchanging purpose we are here doing it right for,
-                        People who seek and expect the best.</p>
+                    <div class="carousel-item item-1 py-5 active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="h1 ">Our <br> Objective </h2>
+                                </div>
+                                <div class="col-9">
+                                    <p class="mt-4">An unstoppable force moves us towards the consolidation of a
+                                        Robust, Reliable and Managed Company. With corporate criteria; that with
+                                        responsibility and knowledge we use Artificial Intelligence, Financial
+                                        Markets, The Metaverse, Digital marketing and Blockchain technology to provide
+                                        opportunities to entrepreneurs and dreamers who seek to build on solid ground,
+                                        far from the media mentality, but zero of the worked achievement.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-2 py-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="h1 ">Our <br> Objective </h2>
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-justify mt-4">Every success is
+                                        preceded by a process; we are here for every
+                                        entrepreneur to dream again to make a career in a company that allows him to
+                                        carry out a life
+                                        project, to pursue a high ideal, to go through a process to obtain an end, to
+                                        give the best of
+                                        himself, to receive from us excellence in every detail.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-3 py-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="h1 ">Our <br> Objective </h2>
+                                </div>
+                                <div class="col-9">
+                                    <p class="textAqua mt-4">True
+                                        success is cultivated, built, forged one day at a
+                                        time, with firm and unchanging purpose we are here doing it right for,
+                                        People who seek and expect the best.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#ourObjetiveCarouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ourObjetiveCarouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- desktop version -->
+            <div class="container-fluid py-5 d-none d-md-block">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-7">
+                        <h2 class="h1 wow animate__animated animate__slideInLeft">Our Objective </h2>
+                        <p class="text-justify text-lg-left wow animate__animated animate__slideInLeft">An unstoppable force
+                            moves us towards the consolidation of a
+                            Robust, Reliable and Managed Company.
+                            With corporate criteria; that with responsibility and knowledge we use Artificial Intelligence,
+                            Financial Markets, The Metaverse, Digital marketing and Blockchain technology to provide
+                            opportunities to entrepreneurs and dreamers who seek to build on solid ground, far from the
+                            media mentality, but zero of the worked achievement.
+                        </p>
+                        <p class="text-justify text-lg-left wow animate__animated animate__slideInLeft">Every success is
+                            preceded by a process; we are here for every
+                            entrepreneur to dream again to make a career in a company that allows him to carry out a life
+                            project, to pursue a high ideal, to go through a process to obtain an end, to give the best of
+                            himself, to receive from us excellence in every detail.</p>
+    
+                        <div class="separador"></div>
+                        <p class="textAqua text-justify text-lg-left wow animate__animated animate__slideInLeft">True
+                            success is cultivated, built, forged one day at a
+                            time, with firm and unchanging purpose we are here doing it right for,
+                            People who seek and expect the best.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- our developments -->
-        <section class="ourDevelopments container-fluid py-5">
-            <div class="vertical-alignment">
-                <div class="top">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="h1 wow animate__animated animate__slideInLeft">Our Developments</h2>
-                            <br>
-                            <p class="wow animate__animated animate__slideInLeft">THESE PRODUCTS ARE AVAILABLE TO THE
-                                GENERAL PUBLIC</p>
+        <section class="our-developments">
+            <!-- mobile version -->
+            <div id="ourDevelopmentsCarouselControls" class="carousel slide d-md-none" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#ourDevelopmentsCarouselControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#ourDevelopmentsCarouselControls" data-slide-to="1"></li>
+                    <li data-target="#ourDevelopmentsCarouselControls" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item item-1 active">
+                        <div class="container-fluid pt-5 od-header">
+                            <h2 class="h1 ">Our Developments </h2>
+                            <p class="mt-1">THESE PRODUCTS ARE AVAILABLE TO THE GENERAL PUBLIC</p>
                         </div>
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mb-3">
-                            <div class="card-blur p-1 wow animate__animated animate__slideInUp">
+
+                        <div class="container-fluid od-contain">
+                            <div class="card-blur p-3">
                                 <h3 class="h3 card-title m-0">HOSTING</h3>
-                                <h5 class="h5 card-subtitle m-0 text-uppercase">Platform</h5>
-                            </div>
-                            <div class="footer-desc mt-1 d-lg-none">
-                                <small>A smart and friendly platform where you can rent or lease any accommodation or
-                                    vehicle.</small>
+                                <h5 class="h5 card-subtitle m-0 text-uppercase">PLATFORM</h5>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                            <div class="card-blur p-1 wow animate__animated animate__slideInUp">
+
+                        <div class="container-fluid pb-5 od-footer">
+                            <small>A smart and friendly platform where you can rent or lease any accommodation or
+                                vehicle.</small>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-2 py-5">
+                        <div class="container-fluid pt-5 od-header">
+                            <h2 class="h1 ">Our Developments </h2>
+                            <p class="mt-1">THESE PRODUCTS ARE AVAILABLE TO THE GENERAL PUBLIC</p>
+                        </div>
+
+                        <div class="container-fluid od-contain">
+                            <div class="card-blur p-3">
                                 <h3 class="h3 card-title m-0">EDUCATIONAL</h3>
-                                <h5 class="h5 card-subtitle m-0 text-uppercase">PlatFORM</h5>
-                            </div>
-                            <div class="footer-desc mt-1 d-lg-none">
-                                <small>The future of education is ONLINE, The Education Of The Future Is The Knowledge
-                                    That Shapes The Being To Become To Have
-                                </small>
+                                <h5 class="h5 card-subtitle m-0 text-uppercase">PLATFORM</h5>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 mb-3">
-                            <div class="card-blur p-1 wow animate__animated animate__slideInUp">
+
+                        <div class="container-fluid pb-5 od-footer">
+                            <small>The future of education is ONLINE, The Education Of The Future Is The Knowledge
+                                That Shapes The Being To Become To Have
+                                Sell and Buy courses, workshops and Pay Per View.</small>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-3 py-5">
+                        <div class="container-fluid pt-5 od-header">
+                            <h2 class="h1 ">Our Developments </h2>
+                            <p class="mt-1">THESE PRODUCTS ARE AVAILABLE TO THE GENERAL PUBLIC</p>
+                        </div>
+
+                        <div class="container-fluid od-contain">
+                            <div class="card-blur p-3">
                                 <h3 class="h3 card-title m-0">CRIPTO ACTIVE</h3>
-                                <h5 class="h5 card-subtitle m-0 text-uppercase">Platform</h5>
+                                <h5 class="h5 card-subtitle m-0 text-uppercase">PLATFORM</h5>
                             </div>
-                            <div class="footer-desc mt-1 d-lg-none">
-                                <small>Which Crypto Asset to Buy, When to Buy and When to Sell.
-                                    Tutorials in your language that teach you where to buy and how to sell.</small>
-                            </div>
+                        </div>
+
+                        <div class="container-fluid pb-5 od-footer">
+                            <small>Which Crypto Asset to Buy, When to Buy and When to Sell.
+                                Tutorials in your language that teach you where to buy and how to sell.</small>
                         </div>
                     </div>
                 </div>
-                <div class="bottom d-none d-lg-block p-5">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="footer-desc wow animate__animated animate__fadeInDown">
-                                <small>A smart and friendly platform where you can rent or lease any accommodation or
-                                    vehicle.</small>
+            </div>
+            <!-- desktop version -->
+            <div class="py-5 d-none d-md-block">
+                <div class="vertical-alignment">
+                    <div class="container-fluid top">
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <h2 class="h1 wow animate__animated animate__slideInLeft">Our Developments</h2>
+                                <br>
+                                <p class="wow animate__animated animate__slideInLeft">THESE PRODUCTS ARE AVAILABLE TO THE
+                                    GENERAL PUBLIC</p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="footer-desc wow animate__animated animate__fadeInDown">
-                                <small>The future of education is ONLINE, The Education Of The Future Is The Knowledge
-                                    That Shapes The Being To Become To Have</small>
+                    </div>
+                    <div class="container-fluid center">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-4 col-lg-4 mb-3">
+                                <div class="card-blur p-1 w-90 w-lg-75 wow animate__animated animate__slideInUp">
+                                    <h3 class="h3 card-title m-0">HOSTING</h3>
+                                    <h5 class="h5 card-subtitle m-0 text-uppercase">Platform</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-4 mb-3">
+                                <div class="card-blur p-1 w-90 w-lg-75 wow animate__animated animate__slideInUp">
+                                    <h3 class="h3 card-title m-0">EDUCATIONAL</h3>
+                                    <h5 class="h5 card-subtitle m-0 text-uppercase">PlatFORM</h5>
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-4 mb-3">
+                                <div class="card-blur p-1 w-90 w-lg-75 wow animate__animated animate__slideInUp">
+                                    <h3 class="h3 card-title m-0">CRIPTO ACTIVE</h3>
+                                    <h5 class="h5 card-subtitle m-0 text-uppercase">Platform</h5>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="footer-desc wow animate__animated animate__fadeInDown">
-                                <small>Which Crypto Asset to Buy, When to Buy and When to Sell.
-                                    <br><br>
-                                    Tutorials in your language that teach you where to buy and how to sell.</small>
+                    </div>
+                    <div class="container-fluid bottom">
+                        <div class="row no-gutters">
+                            <div class="col-4">
+                                <div class="footer-desc w-90 m-auto wow animate__animated animate__fadeInDown">
+                                    <small>A smart and friendly platform where you can rent or lease any accommodation or
+                                        vehicle.</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="footer-desc w-90 m-auto wow animate__animated animate__fadeInDown">
+                                    <small>The future of education is ONLINE, The Education Of The Future Is The Knowledge
+                                        That Shapes The Being To Become To Have</small>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="footer-desc w-90 m-auto wow animate__animated animate__fadeInDown">
+                                    <small>Which Crypto Asset to Buy, When to Buy and When to Sell.
+                                        <br>
+                                        Tutorials in your language that teach you where to buy and how to sell.</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
-
         <!-- Comercial activity -->
         <section class="comercialActivity py-5 container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="h1 wow animate__animated animate__slideInLeft">Business Activity</h2>
+                    <h2 class="h1 wow animate__animated animate__slideInLeft">
+                        Business <br class="d-md-none"> Activity
+                    </h2>
                     <br>
                     <p class="wow animate__animated animate__slideInLeft">DIFFERENTIATING FACTOR</p>
 
                     <p class="wow animate__animated animate__slideInLeft">
                         We manage a sweepstakes platform, under <br>
                         the Coupons Modality. With which the holder <br>
-                        can participate in weekly drawings of:
-                    </p>
+                        can participate in weekly drawings of:</p>
 
                     <ul class="textAqua ml-5">
                         <li class="wow animate__animated animate__slideInLeft ">NFTs</li>
@@ -333,109 +504,218 @@
                         <li class="wow animate__animated animate__slideInLeft ">As well as other valuable items</li>
                     </ul>
 
-                    <button class="btn btn-principal wow animate__animated animate__zoomIn">OPPORTUNITY</button>
                 </div>
             </div>
         </section>
         <!-- Our Services -->
-        <section class="ourServices container-fluid py-5" id="our-services">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="h1 wow animate__animated animate__slideInLeft">Our Services</h2>
-                    <p class="wow animate__animated animate__slideInLeft">For the exclusive use of the community.</p>
+        <section class="our-servises" id="our-services">
+            <div class="container-fluid pt-5">
+                <h2 class="h1 wow animate__animated animate__slideInLeft">Our Services</h2>
+                <p class="wow animate__animated animate__slideInLeft">For the exclusive use of the community.</p>
+            </div>
+            <!-- mobile version -->
+            <div id="ourServicesCarouselControls" class="carousel slide d-md-none pb-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#ourServicesCarouselControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#ourServicesCarouselControls" data-slide-to="1"></li>
+                    <li data-target="#ourServicesCarouselControls" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item item-1 py-5 active">
+                        <div class="container-fluid">
+                            <div class="card">
+                                <img src="img/icons/one.png" class="card-img-top w-25 m-auto" alt="one">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">HANDAPP</h5>
+                                    <div class="card-marco-ext bg-blur d-flex flex-grow-1">
+                                        <div class="card-marco-int p-3 w-100">
+                                            <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
+                                            <img src="img/esquina.svg" alt="image" class="esq-sup-der">
+                                            <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
+                                            <img src="img/esquina.svg" alt="image" class="esq-inf-der">
+                                            <span class="card-border-top"></span>
+                                            <span class="card-border-right"></span>
+                                            <span class="card-border-bottom"></span>
+                                            <span class="card-border-left"></span>
+        
+                                            <ul class="our-services-list ml-2">
+                                                <li><p>Broker Locator</p></li>
+                                                <li><p>Signal receiver</p></li>
+                                                <li><p>Alert system on each signal each signal</p>
+                                                <li><p>Signals in different trading
+                                                    modes 7 days a week, to trade in the market of your
+                                                    choice, with your capital in the broker of your choice</p></li>
+                                                <li><p>Effectiveness of 10/7 to close
+                                                    the day in positive</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item item-2 py-5">
+                        <div class="container-fluid ">
+                            <div class="card" style="flex-grow: 1;">
+                                <img src="img/icons/two.png"
+                                    class="card-img-top w-25 m-auto" alt="two">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">SKYBOT</h5>
+                                    <div class="card-marco-ext bg-blur d-flex flex-grow-1">
+                                        <div class="card-marco-int p-3 w-100">
+                                            <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
+                                            <img src="img/esquina.svg" alt="image" class="esq-sup-der">
+                                            <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
+                                            <img src="img/esquina.svg" alt="image" class="esq-inf-der">
+                                            <span class="card-border-top"></span>
+                                            <span class="card-border-right"></span>
+                                            <span class="card-border-bottom"></span>
+                                            <span class="card-border-left"></span>
+        
+                                            <ul class="our-services-list ml-2">
+                                                <li><p>Bot waiting in Scalping with
+                                                    artificial intelligence</p></li>
+                                                <li><p>Automated operating system</p></li>
+                                                <li><p>Capital in a totally
+                                                    independent Broker</p></li>
+                                                <li><p>Absolute control of your
+                                                    capital</p></li>
+                                                <li><p>Operates 7 days a week. Proven
+                                                    effectiveness tested</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item item-3 py-5">
+                        <div class="container-fluid ">
+                            <div class="card" style="flex-grow: 1;">
+                                <img src="img/icons/three.png" class="card-img-top w-25 m-auto" alt="three">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title text-center">EMPOWER USDT</h5>
+                                    <div class="card-marco-ext bg-blur d-flex flex-grow-1">
+                                        <div class="card-marco-int p-3 w-100">
+                                            <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
+                                            <img src="img/esquina.svg" alt="image" class="esq-sup-der">
+                                            <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
+                                            <img src="img/esquina.svg" alt="image" class="esq-inf-der">
+                                            <span class="card-border-top"></span>
+                                            <span class="card-border-right"></span>
+                                            <span class="card-border-bottom"></span>
+                                            <span class="card-border-left"></span>
+        
+                                            <ul class="our-services-list ml-2">
+                                                <li><p>Participative finance pool</p></li>
+                                                <li><p>Managed, operated and
+                                                    administered by our team of experts</p></li>
+                                                <li><p>Place a capital contribution
+                                                    and receive daily earnings for a limited time</p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
-
-                <div class="col-12 col-md-4 d-flex flex-column">
-                    <div class="card">
-                        <img src="img/icons/one.png"
-                            class="card-img-top w-25 m-auto  wow animate__animated animate__zoomIn" alt="one">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-center">HANDAPP</h5>
-                            <div class="card-marco-ext bg-blur d-flex flex-grow-1">
-                                <div class="card-marco-int p-3">
-                                    <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
-                                    <img src="img/esquina.svg" alt="image" class="esq-sup-der">
-                                    <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
-                                    <img src="img/esquina.svg" alt="image" class="esq-inf-der">
-                                    <span class="card-border-top"></span>
-                                    <span class="card-border-right"></span>
-                                    <span class="card-border-bottom"></span>
-                                    <span class="card-border-left"></span>
-
-                                    <ul class="our-services-list ml-2">
-                                        <li><p class="wow animate__animated animate__fadeInDown">Broker Locator</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Signal receiver</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Alert system on each signal each signal</p>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Signals in different trading
-                                            modes 7 days a week, to trade in the market of your
-                                            choice, with your capital in the broker of your choice</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Effectiveness of 10/7 to close
-                                            the day in positive</p></li>
-                                    </ul>
+            <!-- desktop version -->
+            <div class="container-fluid pb-5 d-none d-md-block" id="our-services">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 col-md-5 col-lg-4 d-flex flex-column">
+                        <div class="card">
+                            <img src="img/icons/one.png"
+                                class="card-img-top w-25 m-auto  wow animate__animated animate__zoomIn" alt="one">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-center">HANDAPP</h5>
+                                <div class="card-marco-ext bg-blur d-flex flex-grow-1">
+                                    <div class="card-marco-int p-3">
+                                        <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
+                                        <img src="img/esquina.svg" alt="image" class="esq-sup-der">
+                                        <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
+                                        <img src="img/esquina.svg" alt="image" class="esq-inf-der">
+                                        <span class="card-border-top"></span>
+                                        <span class="card-border-right"></span>
+                                        <span class="card-border-bottom"></span>
+                                        <span class="card-border-left"></span>
+    
+                                        <ul class="our-services-list ml-2">
+                                            <li><p class="wow animate__animated animate__fadeInDown">Broker Locator</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Signal receiver</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Alert system on each signal each signal</p>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Signals in different trading
+                                                modes 7 days a week, to trade in the market of your
+                                                choice, with your capital in the broker of your choice</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Effectiveness of 10/7 to close
+                                                the day in positive</p></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 d-flex flex-column">
-                    <div class="card" style="flex-grow: 1;">
-                        <img src="img/icons/two.png"
-                            class="card-img-top w-25 m-auto  wow animate__animated animate__zoomIn" alt="two">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-center">SKYBOT</h5>
-                            <div class="card-marco-ext bg-blur d-flex flex-grow-1">
-                                <div class="card-marco-int p-3">
-                                    <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
-                                    <img src="img/esquina.svg" alt="image" class="esq-sup-der">
-                                    <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
-                                    <img src="img/esquina.svg" alt="image" class="esq-inf-der">
-                                    <span class="card-border-top"></span>
-                                    <span class="card-border-right"></span>
-                                    <span class="card-border-bottom"></span>
-                                    <span class="card-border-left"></span>
-
-                                    <ul class="our-services-list ml-2">
-                                        <li><p class="wow animate__animated animate__fadeInDown">Bot waiting in Scalping with
-                                            artificial intelligence</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Automated operating system</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Capital in a totally
-                                            independent Broker</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Absolute control of your
-                                            capital</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Operates 7 days a week. Proven
-                                            effectiveness tested</p></li>
-                                    </ul>
+                    <div class="col-12 col-md-5 col-lg-4 d-flex flex-column">
+                        <div class="card" style="flex-grow: 1;">
+                            <img src="img/icons/two.png"
+                                class="card-img-top w-25 m-auto  wow animate__animated animate__zoomIn" alt="two">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-center">SKYBOT</h5>
+                                <div class="card-marco-ext bg-blur d-flex flex-grow-1">
+                                    <div class="card-marco-int p-3">
+                                        <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
+                                        <img src="img/esquina.svg" alt="image" class="esq-sup-der">
+                                        <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
+                                        <img src="img/esquina.svg" alt="image" class="esq-inf-der">
+                                        <span class="card-border-top"></span>
+                                        <span class="card-border-right"></span>
+                                        <span class="card-border-bottom"></span>
+                                        <span class="card-border-left"></span>
+    
+                                        <ul class="our-services-list ml-2">
+                                            <li><p class="wow animate__animated animate__fadeInDown">Bot waiting in Scalping with
+                                                artificial intelligence</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Automated operating system</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Capital in a totally
+                                                independent Broker</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Absolute control of your
+                                                capital</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Operates 7 days a week. Proven
+                                                effectiveness tested</p></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 d-flex flex-column">
-                    <div class="card" style="flex-grow: 1;">
-                        <img src="img/icons/three.png"
-                            class="card-img-top w-25 m-auto  wow animate__animated animate__zoomIn" alt="three">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-center">EMPOWER USDT</h5>
-                            <div class="card-marco-ext bg-blur d-flex flex-grow-1">
-                                <div class="card-marco-int p-3">
-                                    <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
-                                    <img src="img/esquina.svg" alt="image" class="esq-sup-der">
-                                    <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
-                                    <img src="img/esquina.svg" alt="image" class="esq-inf-der">
-                                    <span class="card-border-top"></span>
-                                    <span class="card-border-right"></span>
-                                    <span class="card-border-bottom"></span>
-                                    <span class="card-border-left"></span>
-
-                                    <ul class="our-services-list ml-2">
-                                        <li><p class="wow animate__animated animate__fadeInDown">Participative finance pool</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Managed, operated and
-                                            administered by our team of experts</p></li>
-                                        <li><p class="wow animate__animated animate__fadeInDown">Place a capital contribution
-                                            and receive daily earnings for a limited time</p></li>
-                                    </ul>
+                    <div class="col-12 col-md-5 col-lg-4 mt-3 mt-lg-0 d-flex flex-column">
+                        <div class="card" style="flex-grow: 1;">
+                            <img src="img/icons/three.png"
+                                class="card-img-top w-25 m-auto  wow animate__animated animate__zoomIn" alt="three">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-center">EMPOWER USDT</h5>
+                                <div class="card-marco-ext bg-blur d-flex flex-grow-1">
+                                    <div class="card-marco-int p-3">
+                                        <img src="img/esquina.svg" alt="image" class="esq-sup-izq">
+                                        <img src="img/esquina.svg" alt="image" class="esq-sup-der">
+                                        <img src="img/esquina.svg" alt="image" class="esq-inf-izq">
+                                        <img src="img/esquina.svg" alt="image" class="esq-inf-der">
+                                        <span class="card-border-top"></span>
+                                        <span class="card-border-right"></span>
+                                        <span class="card-border-bottom"></span>
+                                        <span class="card-border-left"></span>
+    
+                                        <ul class="our-services-list ml-2">
+                                            <li><p class="wow animate__animated animate__fadeInDown">Participative finance pool</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Managed, operated and
+                                                administered by our team of experts</p></li>
+                                            <li><p class="wow animate__animated animate__fadeInDown">Place a capital contribution
+                                                and receive daily earnings for a limited time</p></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -450,12 +730,12 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="h1 wow animate__animated animate__slideInLeft">Contact Us</h2>
-                            <p class="wow animate__animated animate__slideInLeft">
+                            <p class="wow animate__animated animate__slideInLeft mt-4">
                                 ARROW supports and empowers expanding <br class="d-none d-sm-block"> entrepreneurs and
                                 innovations as we grow.
                             </p>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mt-4">
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-12 col-md-5">
@@ -478,7 +758,8 @@
                                 </div>
                                 <div class="form-row mt-4">
                                     <div class="col-12">
-                                        <button class="btn btn-principal wow animate__animated animate__zoomIn">SUBMIT</button>
+                                        <button
+                                            class="btn btn-principal wow animate__animated animate__zoomIn">SUBMIT</button>
                                     </div>
                                 </div>
                             </form>
@@ -487,17 +768,17 @@
                 </div>
                 <div>
                     <h3 class="h3 text-uppercase text-center mt-5 wow animate__animated animate__fadeInUp">A year from
-                        now you will wish you had started today!
-                        </h2>
+                        now you will wish you had started today
+                    </h3>
                 </div>
             </div>
         </section>
         <!-- Follow Us -->
         <section class="container-fluid py-5 followUs d-flex">
-            <div class="row justify-content-center m-auto">
+            <div class="row no-gutters justify-content-center m-auto">
                 <div class="col-12 text-center align-self-center">
                     <h2 class="h1 wow animate__animated animate__fadeInDown">FOLLOW US</h2>
-                    <p class="wow animate__animated animate__fadeInDown">ON SOCIAL MEDIA</p>
+                    <p class="wow animate__animated animate__fadeInDown social-media-text">ON SOCIAL MEDIA</p>
 
                     <ul class="social-menu list-inline mt-5 animate__animated animate__fadeInUp">
                         <li class="list-inline-item">
@@ -527,35 +808,34 @@
     </main>
     <!-- footer -->
     <footer class="footer py-5 container-fluid">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-6 col-sm-3 col-lg-4 order-sm-2 text-center align-self-center">
                 <img src="img/logoHeader.png" alt="logo" class="img-fluid">
             </div>
 
-            <div class="col-12 col-sm-5 col-lg-4 order-sm-1 my-3">
+            <div class="col-12 col-sm-5 col-lg-4 order-sm-1  my-5">
                 <div class="_container">
                     <div class="col1">
                         <ul>
-                            <li><a href="index.html" class="custom-link">HOME</a></li>
-                            <li><a href="#" class="custom-link">ABOUT US</a></li>
-                            <li><a href="#" class="custom-link">SERVICES</a></li>
-                            
-                            <li><a href="opportunity.html" class="custom-link">OPPORTUNITY</a></li>
+                            <li class="pb-2 pb-md-0"><a href="index.html" class="custom-link">HOME</a></li>
+                            <li class="pb-2 pb-md-0"><a href="#" class="custom-link">ABOUT US</a></li>
+                            <li class="pb-2 pb-md-0"><a href="#" class="custom-link">SERVICES</a></li>
+                            <li class="pb-2 pb-md-0"><a href="opportunity.html" class="custom-link">OPPORTUNITY</a></li>
                         </ul>
                     </div>
                     <div class="col2">
                         <ul>
-                            <li><a href="#" class="custom-link">MEMBERSHIP</a></li>
-                            <li><a href="privacyPolicies.html" class="custom-link">PRIVACY POLITICS</a></li>
-                            <li><a href="termsService.html" class="custom-link">TERMS OF SERVICE</a></li>
-                            <li><a href="#" class="custom-link">CONTACT US</a></li>
+                            <li class="pb-2 pb-md-0"><a href="#" class="custom-link">MEMBERSHIP</a></li>
+                            <li class="pb-2 pb-md-0"><a href="privacyPolicies.html" class="custom-link">PRIVACY POLITICS</a></li>
+                            <li class="pb-2 pb-md-0"><a href="termsService.html" class="custom-link">TERMS OF SERVICE</a></li>
+                            <li class="pb-2 pb-md-0"><a href="#" class="custom-link">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-4 order-3 text-sm-right align-self-center">
-                <small> All Rights Reserved &copy; <span id="year"></span></small>
+            <div class="col-12 col-sm-4 order-3 text-center text-md-right align-self-center">
+                <small class="copyright"> All Rights Reserved &copy; <span id="year"></span></small>
             </div>
 
         </div>

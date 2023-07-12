@@ -1,4 +1,4 @@
-/*Small devices (landscape phones, 576px and up)*/
+/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .header {
         position: fixed;
@@ -9,43 +9,114 @@
     }
 }
 
-/*de sm en adelante*/
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-    .ourObjetive {
-        background-position: right;
+    /*========== VIDEO ==========*/
+    .video-container {
+        position: relative;
+        width: 100%;
+        min-height: var(--general-min-hight-section);
+        overflow: hidden;
     }
 
-    .ourDevelopments {
-        background-position-x: center;
+    /*========== ABOUT US ==========*/
+    .about-us {
+        background-image: url('../img/bg/bg2.png');
+        background-position-x: left;
+        background-position-y: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: var(--general-min-hight-section);
+        color: white;
     }
 
-    .comercialActivity {
+    .about-us .item-1 {
+        background-image: none;
+    }
+
+    .about-us .item-2 {
+        background-image: none;
+    }
+
+    .about-us .item-3 {
+        background-image: none;
+    }
+
+    /*========== OUR OBJETIVE ==========*/
+    .our-objetive {
+        background-image: url('../img/bg/bg4.png');
         background-position: center;
+        background-position-x: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: var(--general-min-hight-section);
+        color: white;
     }
 
+    .our-objetive .item-1 {
+        background-image: none;
+    }
 
-    .video .btn-principal {
-        font-size: inherit !important;
-        padding: .75rem 2.5rem;
+    .our-objetive .item-2 {
+        background-image: none;
+    }
+
+    .our-objetive .item-3 {
+        background-image: none;
+    }
+
+    /*========== OUR DEVELOPMENTS ==========*/
+    .our-developments {
+        background-image: url('../img/bg/bg5.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: var(--general-min-hight-section);
+        color: white;
+    }
+
+    .our-developments .container-fluid.center,
+    .our-developments .container-fluid.bottom {
+        padding-right: 1% !important;
+        padding-left: 1% !important;
+    }
+
+    /*========== COMERCIAL ACTIVITY ==========*/
+    .comercialActivity {
+        background-image: url('../img/bg/bg6.png');
+    }
+
+    /*========== FOLLOW US ==========*/
+    .followUs {
+        min-height: calc(100px + (500 - 100) * ((100vw - 300px) / (1600 - 300)));
+    }
+
+    .social-media-text {
+        font-size: var(--paragraphs-dinamic-font-size) !important;
     }
 }
 
-/*De lg en adelante*/
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .aboutUs {
-        background-position-x: center;
-    }
 
-    .card-blur {
-        width: 85%;
-    }
-
-    .footer-desc {
-        width: 85%;
+    /*========== VIDEO ==========*/
+    .video-container .contentZ {
+        width: 50%;
+        left: 0%;
+        transform: translate(14%, -50%);
+        padding: 0 0;
     }
 
 
+    /*=================================*/
+    /*========== OPPORTUNITY ==========*/
+    .an-opportunity,
+    .opportunity .plan {
+        padding: 3rem;
+    }
+
+    /*======== FOR WHOM IT IS? ========*/
     .forWhomItIs {
         flex-direction: row;
     }
@@ -55,34 +126,21 @@
         width: 50%;
     }
 
-
-    .an-opportunity,
-    .opportunity .plan {
-        padding: 3rem;
-    }
-
-
-    .contentZ {
-        width: 45%;
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translate(14%, -50%);
-        z-index: 1;
-        padding: 0 0;
-    }
 }
 
-/*De xl en adelante*/
+/* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .card-blur {
-        width: 75%;
+
+    /*========== VIDEO ==========*/
+    .video-container .contentZ {
+        width: 40%;
+        left: 0%;
+        transform: translate(14%, -50%);
+        padding: 0 0;
     }
 
-    .footer-desc {
-        width: 75%;
-    }
-
+    /*=================================*/
+    /*========== OPPORTUNITY ==========*/
     .opportunity .plan {
         padding: 7rem;
     }
@@ -91,14 +149,31 @@
         padding: 5rem;
     }
 
+    /*========== TYPES OF COMMISIONS ==========*/
+    .comission {
+        padding: 0.5rem 1rem;
+    }
+}
 
-    .contentZ {
-        width: 40%;
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translate(14%, -50%);
-        z-index: 1;
-        padding: 0 0;
+
+/*======================*/
+/*====== GLOBALES ======*/
+@media (min-width : 992px) {
+    .w-lg-75 {
+        width: 75% !important;
+    }
+
+    .w-lg-80 {
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .w-xl-75 {
+        width: 75% !important;
+    }
+
+    .w-xl-80 {
+        width: 80% !important;
     }
 }
