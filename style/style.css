@@ -270,6 +270,7 @@ p {
     width: 100%;
     min-height: var(--mobile-min-hight-section);
     overflow: hidden;
+    color: white;
 }
 
 #background-video {
