@@ -880,3 +880,41 @@ span.vineta {
     letter-spacing: var(--letter-spacing);
     margin-left: 2%;
 }
+
+/*=================================*/
+/*========== OPPORTUNITY ==========*/
+.routeMap {
+    background-image: url('../img/bg/routeMap/bg1.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: var(--general-min-hight-section);
+
+    color: white;
+}
+
+.route-map{
+    background-image: url('../img/bg/routeMap/bg.png');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.routeMap-list li::marker{
+    color: var(--color-aqua);
+    font-size: 2rem;
+    line-height: 0;
+}
+
+.routeMap-list p{
+    color: white;
+}
+
+.br-b-green{
+    display: inline-block;
+    border-bottom: 2px solid #6FFFD0;
+}
