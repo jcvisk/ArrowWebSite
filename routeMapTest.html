@@ -41,70 +41,93 @@
 
     <style>
         body{
-            background-color: white !important;
+            background-color: white;
+        }
+        .line-with-dots {
+            position: relative;
+            height: 3px;
+            width: 100px;
+            background-color: rgb(33, 255, 126);
+            margin-top: 20px;/* Solo para separar la línea de otros elementos, puedes ajustar este valor */
+        }
+
+        .line-with-dots::before,
+        .line-with-dots::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgb(33, 255, 126);
+            border-radius: 50%;
+            top: -4px;
+            /* Ajusta este valor para posicionar el punto verticalmente */
+        }
+
+        .line-with-dots::before {
+            left: 0;
+        }
+
+        .line-with-dots::after {
+            right: 0;
         }
     </style>
+
 </head>
 
 <body>
-    <header class="header bg-transparent-dark">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
 
-                <a class="navbar-brand order-1" href="index.html">
-                    <img src="img/logoHeader.png" alt="logo" class="img-responsive">
-                </a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline">
+                    <div class="timeline">
+                        <div class="timeline-icon"><!-- <span class="year">2018</span> --></div>
+                        
+                        <!-- <div class="timeline-container">
+                            <div class="timeline-date-content">
+                                <h3 class="title m-0">01 AUG | 23</h3>
+                            </div>
+                        </div> -->
 
-                <div class="d-flex order-2 order-lg-3">
-                    <div class="dropdown">
-                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            <img src="img/icons/languague.svg" alt="lang" class="img-fluid">
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="index.html">English</a>
-                            <a class="dropdown-item" href="indexEs.html">Español</a>
+                        <div class="timeline-content">
+                            <div>
+                                <div class="line-with-dots"></div>
+                            </div>
+                            <div>
+                                <p class="description">Inicio etapa <br> Pre Lanzamiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-icon"><!-- <span class="year">2017</span> --></div>
+
+                        <div class="timeline-content">
+                            <div>
+                                <div class="line-with-dots"></div>
+                            </div>
+                            <div>
+                                <p class="description">Inicio etapa <br> Pre Lanzamiento</p>
+                            </div>
                         </div>
                     </div>
 
-                    <button class="navbar-toggler d-none d-lg-block">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="timeline">
+                        <div class="timeline-icon"><!-- <span class="year">2017</span> --></div>
+                        <div class="timeline-content">
+                            <div>
+                                <div class="line-with-dots"></div>
+                            </div>
+                            <div>
+                                <p class="description">Inicio etapa <br> Pre Lanzamiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-
-                <div class="collapse navbar-collapse justify-content-center order-3 order-lg-2"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav text-center">
-                        <li class="nav-item active">
-                            <a class="nav-link custom-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-link" href="#about-us">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-link" href="#our-services">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-link" href="#contact-us">CONTACT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-link" href="opportunity.html">OPPORTUNITY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link custom-link" href="routeMap.html">ROUTE MAP</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </nav>
+            </div>
         </div>
-    </header>
+    </div>
+
     <main>
         <section class="pt-5 routeMap d-flex flex-column justify-content-center">
             <div class="container-fluid">
@@ -173,51 +196,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="main-timeline">
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2018</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Desginer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2017</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Developer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2018</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Desginer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2018</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Desginer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <!-- footer -->
     <footer class="footer py-5 container-fluid">
@@ -294,7 +272,6 @@
           }
         }
     </script>
-    <script type="module" src="index.js"></script>
 
     <script src="assets/plugins/modalvideo/jquery-modal-video.min.js"></script>
     <script src="assets/plugins/animate/wow.min.js"></script>
